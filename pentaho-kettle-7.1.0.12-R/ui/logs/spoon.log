@@ -1,0 +1,578 @@
+java.lang.NullPointerException
+	at org.pentaho.di.core.svg.SvgSupport.isPngName(SvgSupport.java:90)
+	at org.pentaho.di.core.svg.SvgSupport.toSvgName(SvgSupport.java:97)
+	at org.pentaho.di.ui.util.SwtSvgImageUtil.getImageAsResource(SwtSvgImageUtil.java:112)
+	at org.pentaho.di.ui.core.dialog.Splash.loadAsResource(Splash.java:255)
+	at org.pentaho.di.ui.core.dialog.Splash.<init>(Splash.java:95)
+	at org.pentaho.di.ui.core.dialog.Splash.<init>(Splash.java:86)
+	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:659)
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'plugins'
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.core.plugins.BasePluginType.searchPlugins(BasePluginType.java:181)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'plugins/repositories'
+
+
+Unable to get VFS File object for filename 'plugins/repositories' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'plugins/repositories' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.core.plugins.BasePluginType.searchPlugins(BasePluginType.java:181)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'plugins/repositories' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins\repositories" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'plugins'
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.ui.job.dialog.JobDialogPluginType.searchPlugins(JobDialogPluginType.java:65)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'C:\Users\zhangyeyong\.kettle\plugins'
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.ui.job.dialog.JobDialogPluginType.searchPlugins(JobDialogPluginType.java:65)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'plugins'
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.ui.trans.dialog.TransDialogPluginType.searchPlugins(TransDialogPluginType.java:64)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'C:\Users\zhangyeyong\.kettle\plugins'
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.ui.trans.dialog.TransDialogPluginType.searchPlugins(TransDialogPluginType.java:64)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'plugins'
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.core.plugins.BasePluginType.searchPlugins(BasePluginType.java:181)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'C:\Users\zhangyeyong\.kettle\plugins'
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.core.plugins.BasePluginType.searchPlugins(BasePluginType.java:181)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'plugins'
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.core.plugins.BasePluginType.searchPlugins(BasePluginType.java:181)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'plugins' : Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "D:\git\open_source\zip\pentaho-kettle-7.1.0.12-R\ui\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
+org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to list jar files in plugin folder 'C:\Users\zhangyeyong\.kettle\plugins'
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:144)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:117)
+	at org.pentaho.di.core.plugins.JarFileCache.getFileObjects(JarFileCache.java:67)
+	at org.pentaho.di.core.plugins.BasePluginType.findAnnotatedClassFiles(BasePluginType.java:394)
+	at org.pentaho.di.core.plugins.BasePluginType.registerPluginJars(BasePluginType.java:697)
+	at org.pentaho.di.core.plugins.BasePluginType.searchPlugins(BasePluginType.java:181)
+	at org.pentaho.di.core.plugins.PluginRegistry.registerType(PluginRegistry.java:630)
+	at org.pentaho.di.core.plugins.PluginRegistry.init(PluginRegistry.java:602)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:115)
+	at org.pentaho.di.core.KettleClientEnvironment.init(KettleClientEnvironment.java:79)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:124)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:98)
+	at org.pentaho.di.core.KettleEnvironment.init(KettleEnvironment.java:79)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:624)
+	at org.pentaho.di.ui.spoon.Spoon$1.call(Spoon.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.pentaho.di.core.exception.KettleFileException: 
+
+Unable to get VFS File object for filename 'C:\Users\zhangyeyong\.kettle\plugins' : Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:154)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:106)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:102)
+	at org.pentaho.di.core.plugins.PluginFolder.findJarFiles(PluginFolder.java:125)
+	... 18 more
+Caused by: org.apache.commons.vfs2.FileSystemException: Could not find file with URI "C:\Users\zhangyeyong\.kettle\plugins" because it is a relative path, and no base URI was provided.
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:815)
+	at org.pentaho.di.core.vfs.ConcurrentFileSystemManager.resolveFile(ConcurrentFileSystemManager.java:89)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:746)
+	at org.apache.commons.vfs2.impl.DefaultFileSystemManager.resolveFile(DefaultFileSystemManager.java:695)
+	at org.pentaho.di.core.vfs.KettleVFS.getFileObject(KettleVFS.java:151)
+	... 21 more
